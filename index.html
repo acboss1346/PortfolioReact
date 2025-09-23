@@ -3,262 +3,277 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akshat Chauhan | Portfolio</title>
-
-  <!-- SEO -->
-  <meta name="description" content="Akshat Chauhan - Web Developer & Designer Portfolio. Showcasing projects, skills, and education.">
-  <link rel="icon" href="favicon.png" type="image/png">
-
-  <!-- CSS Libraries -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
+  <title>Akshat Chauhan - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <style>
-    body {
+    :root {
+      --primary: #4a6bff;
+      --dark: #2a2a2a;
+      --light: #f5f7fa;
+      --gray: #777;
+    }
+
+    * {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
       scroll-behavior: smooth;
     }
 
-    /* Navbar */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    header.scrolled {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background: white;
+      padding: 8px 0;
+    }
+
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 50px;
-      background: #fff;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      padding: 18px 0;
     }
-    .logo { font-size: 1.5rem; font-weight: 700; }
-    .nav-links { list-style: none; display: flex; gap: 20px; }
-    .nav-links li a { text-decoration: none; font-weight: 600; color: #333; transition: color 0.3s; }
-    .nav-links li a:hover { color: #007BFF; }
-    .hamburger { display: none; font-size: 1.8rem; cursor: pointer; }
 
-    /* Hero */
-    header {
-      height: 100vh;
-      background: linear-gradient(to right, #007BFF, #00C6FF);
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      flex-direction: column;
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary);
     }
-    header h1 { font-size: 3rem; }
-    header h2 { font-size: 1.5rem; margin: 15px 0; }
+
+    .logo span {
+      color: var(--dark);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-links li {
+      margin-left: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links a:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover:after {
+      width: 100%;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      font-size: 22px;
+    }
+
+    /* Mobile menu */
+    .nav-links.active {
+      display: block;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: white;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .nav-links.active li {
+      margin: 15px 0;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
     .btn {
       display: inline-block;
-      background: #fff;
-      color: #007BFF;
-      padding: 10px 20px;
-      margin-top: 20px;
+      background: var(--primary);
+      color: white;
+      padding: 12px 30px;
       border-radius: 30px;
-      font-weight: 600;
       text-decoration: none;
-      transition: 0.3s;
-    }
-    .btn:hover { background: #f1f1f1; }
-
-    /* Sections */
-    section { padding: 80px 50px; }
-    .section-title { text-align: center; font-size: 2rem; margin-bottom: 50px; }
-
-    /* About */
-    #about img {
-      width: 200px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-    #about { text-align: center; }
-
-    /* Skills */
-    .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-    .skill { background: #f9f9f9; padding: 20px; border-radius: 10px; text-align: center; }
-    .skill-bar { background: #ddd; height: 8px; border-radius: 5px; margin-top: 10px; }
-    .skill-progress {
-      background: #007BFF;
-      height: 100%;
-      width: 0;
-      border-radius: 5px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(74, 107, 255, 0.4);
+      margin-right: 15px;
     }
 
-    /* Projects */
-    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-    .project-card {
-      background: rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(10px);
-      border-radius: 15px;
-      padding: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(74, 107, 255, 0.6);
     }
-    .project-card:hover { transform: translateY(-10px); }
 
-    /* Contact */
-    .contact-info { text-align: center; }
-    .contact-info a { display: inline-block; margin: 10px; font-size: 1.5rem; color: #333; transition: color 0.3s; }
-    .contact-info a:hover { color: #007BFF; }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      box-shadow: none;
+    }
 
-    /* Footer */
-    footer { text-align: center; padding: 20px; background: #f1f1f1; }
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    .hero-image {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30%;
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+      animation: float 6s ease-in-out infinite;
+      z-index: 1;
+    }
+
+    /* Floating Animation */
+    @keyframes float {
+      0% { transform: translateY(-50%); }
+      50% { transform: translateY(-55%); }
+      100% { transform: translateY(-50%); }
+    }
 
     /* Responsive */
+    @media (max-width: 992px) {
+      .hero h1 { font-size: 36px; }
+    }
+
     @media (max-width: 768px) {
-      .nav-links { display: none; flex-direction: column; background: white; position: absolute; top: 70px; right: 20px; padding: 20px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-      .nav-links.active { display: flex; }
+      .nav-links { display: none; flex-direction: column; }
       .hamburger { display: block; }
+      .hero { text-align: center; }
+      .hero-content { margin: 0 auto; }
+      .hero-image { display: none; }
+      .btn { display: block; margin-bottom: 15px; margin-right: 0; }
     }
   </style>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">Akshat Chauhan</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="hamburger"><i class="fas fa-bars"></i></div>
-  </nav>
-
-  <!-- Hero -->
-  <header>
-    <h1 class="animate__animated animate__fadeInDown">Hi, I'm Akshat 👋</h1>
-    <h2 id="typing"></h2>
-    <a href="resume.pdf" class="btn" download>Download CV</a>
+  <header id="header">
+    <div class="container">
+      <nav>
+        <div class="logo">Akshat<span>.</span></div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <!-- About -->
-  <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <img src="school.jpeg" alt="Akshat Chauhan" loading="lazy">
-    <p>Hello! I'm Akshat Chauhan, a passionate Web Developer & Designer with skills in React, Python, Node.js, Express.js, and Prisma. I love creating modern, user-friendly applications and solving challenging problems.</p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills">
-      <div class="skill">
-        <h3>HTML</h3>
-        <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="animate__animated animate__fadeInDown">Hi, I'm <span>Akshat Chauhan</span></h1>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">Web Developer & Designer creating beautiful, functional digital experiences.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn animate__animated animate__fadeInUp animate__delay-2s">View My Work</a>
+          <a href="#contact" class="btn btn-outline animate__animated animate__fadeInUp animate__delay-3s">Contact Me</a>
+        </div>
       </div>
-      <div class="skill">
-        <h3>CSS</h3>
-        <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
-      </div>
-      <div class="skill">
-        <h3>JavaScript</h3>
-        <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
-      </div>
-      <div class="skill">
-        <h3>React</h3>
-        <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
-      </div>
-      <div class="skill">
-        <h3>Node.js</h3>
-        <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
-      </div>
-      <div class="skill">
-        <h3>Express.js</h3>
-        <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
-      </div>
-      <div class="skill">
-        <h3>Prisma</h3>
-        <div class="skill-bar"><div class="skill-progress" data-progress="65"></div></div>
-      </div>
+      <img src="WhatsApp Image 2025-02-10 at 09.36.19.jpeg" alt="Akshat Chauhan" class="hero-image">
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects">
-      <div class="project-card animate__animated">
-        <h3>News Article Summarizer</h3>
-        <p>Summarizes news articles and performs sentiment analysis using Python, Tkinter, Newspaper3k, and NLP.</p>
-        <a href="https://github.com/acboss1346/news-summarizer" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-      </div>
-      <div class="project-card animate__animated">
-        <h3>Social Media Platform</h3>
-        <p>A complete social media platform built with React, Firebase, and Cloudinary for image uploads.</p>
-        <a href="https://github.com/acboss1346/social-media-platform" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-      </div>
-    </div>
-  </section>
+  <!-- Add your About, Education, Projects, Contact, Footer here (same as your version) -->
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <div class="contact-info">
-      <p>Email: <a href="mailto:akshat@example.com">akshat@example.com</a></p>
-      <a href="https://linkedin.com/in/akshat-chauhan" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/acboss1346" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Akshat Chauhan. All rights reserved.</p>
-  </footer>
-
-  <!-- Scripts -->
   <script>
-    // Hamburger menu toggle
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+    // Sticky header effect
+    window.addEventListener("scroll", () => {
+      const header = document.getElementById("header");
+      header.classList.toggle("scrolled", window.scrollY > 50);
     });
 
-    // Typing effect
-    const texts = ["Web Developer", "Designer", "AI Enthusiast"];
-    let i = 0, j = 0, currentText = '', isDeleting = false;
-    function type() {
-      currentText = texts[i];
-      document.getElementById("typing").textContent = currentText.substring(0, j);
-      if (!isDeleting && j < currentText.length) { j++; setTimeout(type, 120); }
-      else if (isDeleting && j > 0) { j--; setTimeout(type, 60); }
-      else { isDeleting = !isDeleting; if (!isDeleting) i = (i + 1) % texts.length; setTimeout(type, 1000); }
-    }
-    type();
-
-    // Scroll animations with Intersection Observer
-    const animatedElements = document.querySelectorAll('.animate__animated');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate__fadeInUp');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.2 });
-    animatedElements.forEach(el => observer.observe(el));
-
-    // Skill bar animation
-    const skillBars = document.querySelectorAll('.skill-progress');
-    const skillObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const progress = entry.target.getAttribute('data-progress');
-          entry.target.style.width = progress + "%";
-          entry.target.classList.add('animate');
-          skillObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.5 });
-    skillBars.forEach(bar => skillObserver.observe(bar));
+    // Hamburger toggle
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
   </script>
 </body>
 </html>
