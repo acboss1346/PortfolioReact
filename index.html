@@ -4,413 +4,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshat Chauhan - Portfolio</title>
+    <title>Akshat Chauhan | Developer & Designer</title>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header id="header">
-        <div class="container">
-            <nav>
-                <div class="logo">Akshat<span>.</span></div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Akshat.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="animate__animated animate__fadeInDown">Hi, I'm <span>Akshat Chauhan</span></h1>
-                <p class="animate__animated animate__fadeIn animate__delay-1s">Web Developer & Designer creating
-                    beautiful, functional digital experiences.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn animate__animated animate__fadeInUp animate__delay-2s">View My
-                        Work</a>
-                    <a href="#contact"
-                        class="btn btn-outline animate__animated animate__fadeInUp animate__delay-3s">Contact Me</a>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <span class="eyebrow">Web Developer & AI Enthusiast</span>
+                        <h1>Building digital <br>experiences that <span class="accent-text">matter.</span></h1>
+                        <p>I transform complex problems into clean, intuitive, and performant solutions.</p>
+                        <div class="cta-group">
+                            <a href="#work" class="btn btn-primary">View Work</a>
+                            <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image-container animate__animated animate__fadeInRight">
-                <div class="hero-blob"></div>
-                <img src="WhatsApp Image 2025-02-10 at 09.36.19.jpeg" alt="Akshat Chauhan" class="hero-image">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="about" id="about">
-        <div class="container">
-            <div class="section-title">
-                <h2 class="animate__animated animate__fadeIn">About Me</h2>
-                <p class="animate__animated animate__fadeIn animate__delay-1s">Get to know me better</p>
-            </div>
-            <div class="about-content">
-                <div class="about-image-wrapper animate__animated animate__fadeInLeft">
-                    <img src="WhatsApp Image 2025-02-10 at 09.36.19.jpeg" alt="Akshat Chauhan">
+        <!-- Bento Grid Section (About & Skills) -->
+        <section id="about" class="bento-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>The Stack & Story</h2>
                 </div>
-                <div class="about-text animate__animated animate__fadeInRight">
-                    <h3>Who am I?</h3>
-                    <p>I'm a passionate web developer from Ghaziabad, Uttar Pradesh with expertise in creating modern,
-                        responsive websites and web applications. I love turning complex problems into simple, beautiful
-                        and intuitive solutions.</p>
-                    <p>Currently pursuing my B.Tech in Computer Science and AI at Newton School of Technology, Rishihood
-                        University while honing my skills in web development.</p>
 
-                    <div class="skills-container">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>HTML/CSS</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
+                <div class="bento-grid">
+                    <!-- Profile Card (Large) -->
+                    <div class="bento-card profile-card">
+                        <div class="card-content">
+                            <h3>Akshat Chauhan</h3>
+                            <p>B.Tech CS & AI Student @ Newton School of Technology</p>
+                            <p class="bio">Passionate web developer from Ghaziabad. I blend creative design with robust
+                                engineering to build web apps that feel alive.</p>
+                            <div class="social-pills">
+                                <a href="https://github.com/acboss1346" target="_blank"><i class="fab fa-github"></i>
+                                    GitHub</a>
+                                <a href="https://www.linkedin.com/in/akshat-chauhan-8b80262a9/" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i> LinkedIn</a>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>JavaScript</span>
-                                <span>85%</span>
+                        <div class="profile-img-container">
+                            <img src="WhatsApp Image 2025-02-10 at 09.36.19.jpeg" alt="Akshat">
+                        </div>
+                    </div>
+
+                    <!-- Tech Stack (Medium) -->
+                    <div class="bento-card stack-card">
+                        <h3>Tech Arsenal</h3>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Python</span>
+                            <span>Tailwind</span>
+                            <span>PostgreSQL</span>
+                            <span>Figma</span>
+                            <span>Git</span>
+                            <span>HTML5/CSS3</span>
+                        </div>
+                    </div>
+
+                    <!-- Education (Tall) -->
+                    <div class="bento-card edu-card">
+                        <h3>Education</h3>
+                        <div class="edu-item">
+                            <div class="edu-year">2024 - Present</div>
+                            <img src="RU-Website-HomeBanner-1.png" alt="University Logo" class="edu-logo">
+                            <h4>Newton School of Technology</h4>
+                            <p>B.Tech in Computer Science & AI</p>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-year">2010 - 2024</div>
+                            <img src="school.jpeg" alt="School Logo" class="edu-logo">
+                            <h4>Gurukul The School</h4>
+                            <p>Distinction in AI & Math</p>
+                        </div>
+                    </div>
+
+                    <!-- Stat Card (Small) -->
+                    <div class="bento-card stat-card">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Major Projects</div>
+                    </div>
+
+                    <!-- Location Card (Small) -->
+                    <div class="bento-card loc-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="loc-text">Based in<br>Ghaziabad, India</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="work" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Selected Work</h2>
+                </div>
+
+                <div class="project-list">
+                    <!-- Project 1 -->
+                    <article class="project-item">
+                        <div class="project-content">
+                            <h3>Foodify</h3>
+                            <p>Full-stack food delivery system with role-based auth, smart cart, and admin dashboard.
+                            </p>
+                            <div class="project-meta">
+                                <span>React v19</span>
+                                <span>Node/Express</span>
+                                <span>PostgreSQL</span>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
+                            <div class="project-links">
+                                <a href="https://foodify-final-5lg8f75dz-acboss1346s-projects.vercel.app/home"
+                                    target="_blank">View Live</a>
+                                <a href="https://github.com/acboss1346/Foodify_Final" target="_blank">Code</a>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
+                        <div class="project-visual project-1-gradient">
+                            <div class="project-mockup"></div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-item">
+                        <div class="project-content">
+                            <h3>PixLoop</h3>
+                            <p>Secure image sharing platform fostering a creative community with real-time interactions.
+                            </p>
+                            <div class="project-meta">
                                 <span>React</span>
-                                <span>80%</span>
+                                <span>Supabase</span>
+                                <span>Real-time</span>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
+                            <div class="project-links">
+                                <a href="https://pix-loop.vercel.app/" target="_blank">View Live</a>
+                                <a href="https://github.com/acboss1346/PixLoop" target="_blank">Code</a>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
+                        <div class="project-visual project-2-gradient">
+                            <div class="project-mockup"></div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-item">
+                        <div class="project-content">
+                            <h3>News AI</h3>
+                            <p>Instant news article summarizer utilizing Natural Language Processing (NLP).</p>
+                            <div class="project-meta">
                                 <span>Python</span>
-                                <span>75%</span>
+                                <span>NLP</span>
+                                <span>Streamlit</span>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
+                            <div class="project-links">
+                                <a href="https://nas-project.streamlit.app/" target="_blank">View Live</a>
+                                <a href="https://github.com/acboss1346/NAS-project" target="_blank">Code</a>
                             </div>
                         </div>
-                    </div>
+                        <div class="project-visual project-3-gradient">
+                            <div class="project-mockup"></div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="education" id="education">
-        <div class="container">
-            <div class="section-title">
-                <h2 class="animate__animated animate__fadeIn">My Education</h2>
-                <p class="animate__animated animate__fadeIn animate__delay-1s">My academic journey</p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item animate__animated animate__fadeInUp">
-                    <div class="timeline-img">
-                        <img src="RU-Website-HomeBanner-1.png" alt="Rishihood University">
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-text">
+                        <h2>Ready to collaborate?</h2>
+                        <p>Sending a message is the first step to building something great.</p>
+                        <a href="mailto:akshatchauhan1346@gmail.com" class="email-link">akshatchauhan1346@gmail.com</a>
                     </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2024 - Present</span>
-                        <h3>B.Tech in Computer Science & AI</h3>
-                        <h4>Newton School of Technology, Rishihood University</h4>
-                        <p>Currently pursuing my degree with focus on web development, artificial intelligence, and data
-                            structures. Paticipating in Hackathons and also on co-curricular fields like cricket being
-                            an active member of team and represting it in matches and tournaments.</p>
-                    </div>
-                </div>
-                <div class="timeline-item animate__animated animate__fadeInUp animate__delay-1s">
-                    <div class="timeline-img">
-                        <img src="school.jpeg" alt="Gurukul The School">
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2010 - 2024</span>
-                        <h3>Schooling</h3>
-                        <h4>Gurukul The School</h4>
-                        <p>Completed my secondary education with distinction in AI and Mathematics. Developed my first
-                            websites during this time and discovered my passion for coding. Also represented my school
-                            on many fronts espicially Sports and Artwork and won many awards.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="projects" id="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2 class="animate__animated animate__fadeIn">My Projects</h2>
-                <p class="animate__animated animate__fadeIn animate__delay-1s">Some of my recent work</p>
-            </div>
-            <div class="projects-grid">
-
-                <!-- Project 1: Foodify -->
-                <div class="project-card animate__animated animate__fadeInUp">
-                    <div class="project-header">
-                        <div class="project-title-overlay">Foodify</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Smart Food Ordering System</h3>
-                        <p>A full-stack food delivery system for canteens. Features role-based auth (JWT), menu
-                            management, smart cart, real-time order tracking, and a premium admin panel.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React (v19)</span>
-                            <span class="project-tag">Node/Express</span>
-                            <span class="project-tag">PostgreSQL</span>
-                            <span class="project-tag">TailwindCSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://foodify-final-5lg8f75dz-acboss1346s-projects.vercel.app/home"
-                                target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/acboss1346/Foodify_Final" target="_blank" title="GitHub Repo"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: PixLoop -->
-                <div class="project-card animate__animated animate__fadeInUp animate__delay-1s">
-                    <div class="project-header">
-                        <div class="project-title-overlay">PixLoop</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Image Sharing Platform</h3>
-                        <p>A secure image sharing and discovery platform fostering a creative community. Features
-                            real-time updates, optimized uploads, comment sections, and a responsive UI/UX for seamless
-                            interaction.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Supabase</span>
-                            <span class="project-tag">Auth</span>
-                            <span class="project-tag">Real-time</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://pix-loop.vercel.app/" target="_blank" title="Live Demo"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/acboss1346/PixLoop" target="_blank" title="GitHub Repo"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: Pizzeria -->
-                <div class="project-card animate__animated animate__fadeInUp animate__delay-2s">
-                    <div class="project-header">
-                        <div class="project-title-overlay">Pizzeria</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Pizza Delivery App</h3>
-                        <p>A React-based pizza ordering application with cart functionality, order customization, and
-                            responsive design for seamless user experience.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://acboss1346.github.io/Pizza_del/" target="_blank" title="Live Demo"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/acboss1346/Pizza_del" target="_blank" title="GitHub Repo"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: News Summarizer -->
-                <div class="project-card animate__animated animate__fadeInUp animate__delay-3s">
-                    <div class="project-header">
-                        <div class="project-title-overlay">News AI</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>News Article Summarizer</h3>
-                        <p>A web application that summarizes news articles using natural language processing techniques
-                            to extract key information instantly.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">NLP</span>
-                            <span class="project-tag">Streamlit</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://nas-project.streamlit.app/" target="_blank" title="Live Demo"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/acboss1346/NAS-project" target="_blank" title="GitHub Repo"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2 class="animate__animated animate__fadeIn">Get In Touch</h2>
-                <p class="animate__animated animate__fadeIn animate__delay-1s">I'd love to hear from you</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info animate__animated animate__fadeInLeft">
-                    <h3>Let's talk about your project</h3>
-                    <p>Feel free to reach out if you're looking for a developer, have a question, or just want to
-                        connect.</p>
-                    <ul class="contact-details">
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>akshatchauhan1346@gmail.com</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <span>+91 82871 85297</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Ghaziabad, Uttar Pradesh, India</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contact-form animate__animated animate__fadeInRight">
-                    <form>
+                    <!-- Formspree Form -->
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Subject">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required
+                                placeholder="Tell me about your project..."></textarea>
                         </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
+                        <button type="submit" class="submit-btn">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-logo">Akshat<span>.</span></div>
-            <ul class="footer-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="social-links">
-                <a href="https://github.com/acboss1346" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/akshat-chauhan-8b80262a9/" target="_blank"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/akshat18710/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="logo">Akshat.</span>
+                <p>&copy; 2024. Crafted with purpose.</p>
             </div>
-            <div class="copyright">
-                <p>&copy; 2024 Akshat Chauhan. All Rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/acboss1346" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/akshat-chauhan-8b80262a9/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/akshat18710/" target="_blank">Instagram</a>
             </div>
         </div>
     </footer>
 
     <script>
-        // Header scroll effect
-        window.addEventListener('scroll', function () {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
+        // Custom Cursor Logic
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            // Adding a slight delay to the outline for a fluid feel
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: "forwards" });
         });
 
-        // Mobile menu toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', function () {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Smooth scrolling for anchor links
+        // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
             });
         });
 
-        // Animate skill bars on scroll
-        const animateSkills = function () {
-            const skillBars = document.querySelectorAll('.skill-progress');
-
-            skillBars.forEach(bar => {
-                const width = bar.style.width;
-                bar.style.width = '0';
-
-                setTimeout(() => {
-                    bar.style.width = width;
-                }, 100);
-            });
-        };
-
-        // Animate elements on scroll
-        const animateOnScroll = function () {
-            const elements = document.querySelectorAll('.about-image, .about-text, .timeline-item, .project-card, .contact-info, .contact-form');
-
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.15; // Trigger a bit earlier
-
-                if (elementPosition < screenPosition) {
-                    element.classList.add('animate__fadeInUp');
-                    element.style.opacity = 1;
-                }
-            });
-
-            // Check if skills section is in view
-            const skillsSection = document.querySelector('.skills-container');
-            if (skillsSection) {
-                const skillsPosition = skillsSection.getBoundingClientRect().top;
-                if (skillsPosition < screenPosition) {
-                    animateSkills();
-                }
+        // Navbar blur on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
             }
-        };
-
-        window.addEventListener('scroll', animateOnScroll);
-        window.addEventListener('load', animateOnScroll);
+        });
     </script>
 </body>
 
