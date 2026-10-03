@@ -1,113 +1,875 @@
-<div class="skills-wrapper" style="margin-top: 30px;">
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="skill-item">
-        <div class="skill-info">
-            <span>Python / AI & ML</span>
-            <span>90%</span>
-        </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: 90%"></div>
-        </div>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshat Chauhan | Developer</title>
 
-    <div class="skill-item">
-        <div class="skill-info">
-            <span>JavaScript / React</span>
-            <span>90%</span>
-        </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: 90%"></div>
-        </div>
-    </div>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-    <div class="skill-item">
-        <div class="skill-info">
-            <span>Node.js / Express</span>
-            <span>85%</span>
-        </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: 85%"></div>
-        </div>
-    </div>
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <div class="skill-item">
-        <div class="skill-info">
-            <span>SQL / PostgreSQL / MongoDB</span>
-            <span>82%</span>
-        </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: 82%"></div>
-        </div>
-    </div>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <div class="skill-item">
-        <div class="skill-info">
-            <span>NumPy / Pandas / Scikit-Learn</span>
-            <span>82%</span>
-        </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: 82%"></div>
-        </div>
-    </div>
+<body>
 
-    <div class="skill-item">
-        <div class="skill-info">
-            <span>GenAI / RAG / LangGraph</span>
-            <span>80%</span>
-        </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: 80%"></div>
-        </div>
-    </div>
+    <!-- Starfield -->
+    <canvas id="star-canvas"></canvas>
 
-    <div class="skill-item">
-        <div class="skill-info">
-            <span>Streamlit / Hugging Face / ChromaDB</span>
-            <span>78%</span>
-        </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: 78%"></div>
-        </div>
-    </div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Akshat<span>.</span></div>
 
-    <div class="skill-item">
-        <div class="skill-info">
-            <span>Firebase / REST APIs</span>
-            <span>78%</span>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: 78%"></div>
-        </div>
-    </div>
+    </header>
 
-    <div class="skill-item">
-        <div class="skill-info">
-            <span>Git / GitHub</span>
-            <span>85%</span>
-        </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: 85%"></div>
-        </div>
-    </div>
 
-    <div class="skill-item">
-        <div class="skill-info">
-            <span>Verilog</span>
-            <span>65%</span>
-        </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: 65%"></div>
-        </div>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container"
+            style="display: flex; align-items: center; width: 100%; gap: 60px;">
 
-    <div class="skill-item">
-        <div class="skill-info">
-            <span>n8n / Make / Zapier</span>
-            <span>75%</span>
-        </div>
-        <div class="skill-bar">
-            <div class="skill-progress" style="width: 75%"></div>
-        </div>
-    </div>
+            <div class="hero-content">
 
-</div>
+                <h1>
+                    Hi, I'm <span>Akshat Chauhan</span>
+                </h1>
+
+                <p>
+                    AI & Full-Stack Developer building intelligent, functional digital experiences.
+                </p>
+
+                <div>
+                    <a href="#work" class="btn">View My Work</a>
+                    <a href="#contact" class="btn-outline">Contact Me</a>
+                </div>
+
+            </div>
+
+
+            <div class="hero-image-container">
+                <img src="WhatsApp Image 2025-02-10 at 09.36.19.jpeg"
+                    alt="Akshat"
+                    class="hero-img">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know me</p>
+            </div>
+
+
+            <div class="about-content">
+
+                <div class="about-img-wrapper">
+                    <img src="WhatsApp Image 2025-02-10 at 09.36.19.jpeg"
+                        alt="Akshat">
+                </div>
+
+
+                <div class="about-text">
+
+                    <h3>Who am I?</h3>
+
+                    <p>
+                        I'm a passionate developer from Ghaziabad, Uttar Pradesh
+                        with experience in creating modern, responsive and
+                        intelligent digital experiences.
+                    </p>
+
+                    <p>
+                        Currently pursuing my B.Tech in Computer Science and AI
+                        at Newton School of Technology, developing skills across
+                        AI/ML, full-stack development, backend systems and
+                        intelligent applications.
+                    </p>
+
+
+                    <!-- Skills -->
+                    <div class="skills-wrapper" style="margin-top: 30px;">
+
+                        <!-- Python / AI -->
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>Python / AI & ML</span>
+                                <span>90%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-progress"
+                                    style="width: 90%">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- JavaScript / React -->
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>JavaScript / React</span>
+                                <span>90%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-progress"
+                                    style="width: 90%">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Node -->
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>Node.js / Express</span>
+                                <span>85%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-progress"
+                                    style="width: 85%">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Databases -->
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>SQL / PostgreSQL / MongoDB</span>
+                                <span>82%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-progress"
+                                    style="width: 82%">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Data Science -->
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>NumPy / Pandas / Scikit-Learn</span>
+                                <span>82%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-progress"
+                                    style="width: 82%">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- GenAI -->
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>GenAI / RAG / LangGraph</span>
+                                <span>80%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-progress"
+                                    style="width: 80%">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- AI Tools -->
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>Streamlit / Hugging Face / ChromaDB</span>
+                                <span>78%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-progress"
+                                    style="width: 78%">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Firebase -->
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>Firebase / REST APIs</span>
+                                <span>78%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-progress"
+                                    style="width: 78%">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Git -->
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>Git / GitHub</span>
+                                <span>85%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-progress"
+                                    style="width: 85%">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Verilog -->
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>Verilog</span>
+                                <span>65%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-progress"
+                                    style="width: 65%">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Automation -->
+                        <div class="skill-item">
+
+                            <div class="skill-info">
+                                <span>n8n / Make / Zapier</span>
+                                <span>75%</span>
+                            </div>
+
+                            <div class="skill-bar">
+                                <div class="skill-progress"
+                                    style="width: 75%">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education Section -->
+    <section id="education">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Education</h2>
+                <p>My Academic Journey</p>
+            </div>
+
+
+            <div class="timeline">
+
+                <!-- Item 1 -->
+                <div class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+                    <div class="timeline-content">
+
+                        <span class="t-date">
+                            2024 - Present
+                        </span>
+
+                        <div class="t-title">
+                            B.Tech in CS & AI
+                        </div>
+
+                        <div class="t-school">
+                            Newton School of Technology
+                        </div>
+
+                        <div class="t-desc">
+                            Focusing on Data Structures, Algorithms,
+                            Artificial Intelligence, Machine Learning,
+                            and Full Stack Web Development.
+                            Active participant in hackathons and
+                            technical activities.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Item 2 -->
+                <div class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+                    <div class="timeline-content">
+
+                        <span class="t-date">
+                            2010 - 2024
+                        </span>
+
+                        <div class="t-title">
+                            Higher Secondary
+                        </div>
+
+                        <div class="t-school">
+                            Gurukul The School
+                        </div>
+
+                        <div class="t-desc">
+                            Completed secondary education with a strong
+                            foundation in Mathematics, Computer Science
+                            and technology.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="work">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Projects</h2>
+                <p>Recent Deployments</p>
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- Foodify -->
+                <article class="project-card">
+
+                    <div class="project-header p1-head">
+                        <span>🍔</span>
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Foodify</h3>
+
+                        <p>
+                            Full-stack food ordering system with
+                            role-based authentication, smart cart,
+                            order management and admin dashboard.
+                        </p>
+
+                        <div class="p-tags">
+                            <span class="p-tag">React</span>
+                            <span class="p-tag">Node</span>
+                            <span class="p-tag">Postgres</span>
+                        </div>
+
+                        <div class="p-links">
+
+                            <a href="https://github.com/acboss1346/Foodify_Final"
+                                target="_blank"
+                                class="p-btn">
+
+                                <i class="fab fa-github"></i>
+
+                            </a>
+
+                            <a href="https://foodify-final-5lg8f75dz-acboss1346s-projects.vercel.app/home"
+                                target="_blank"
+                                class="p-btn">
+
+                                <i class="fas fa-external-link-alt"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PixLoop -->
+                <article class="project-card">
+
+                    <div class="project-header p2-head">
+                        <span>📸</span>
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>PixLoop</h3>
+
+                        <p>
+                            Secure image sharing platform fostering
+                            a creative community with real-time
+                            interactions.
+                        </p>
+
+                        <div class="p-tags">
+                            <span class="p-tag">React</span>
+                            <span class="p-tag">Supabase</span>
+                        </div>
+
+                        <div class="p-links">
+
+                            <a href="https://github.com/acboss1346/PixLoop"
+                                target="_blank"
+                                class="p-btn">
+
+                                <i class="fab fa-github"></i>
+
+                            </a>
+
+                            <a href="https://pix-loop.vercel.app/"
+                                target="_blank"
+                                class="p-btn">
+
+                                <i class="fas fa-external-link-alt"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- News AI -->
+                <article class="project-card">
+
+                    <div class="project-header p3-head">
+                        <span>📰</span>
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>News AI</h3>
+
+                        <p>
+                            Instant news article summarizer utilizing
+                            Natural Language Processing (NLP).
+                        </p>
+
+                        <div class="p-tags">
+                            <span class="p-tag">Python</span>
+                            <span class="p-tag">NLP</span>
+                            <span class="p-tag">Streamlit</span>
+                        </div>
+
+                        <div class="p-links">
+
+                            <a href="https://github.com/acboss1346/NAS-project"
+                                target="_blank"
+                                class="p-btn">
+
+                                <i class="fab fa-github"></i>
+
+                            </a>
+
+                            <a href="https://nas-project-nucnm2n7mnumqwg6xnexci.streamlit.app/"
+                                target="_blank"
+                                class="p-btn">
+
+                                <i class="fas fa-external-link-alt"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ChurnGuard AI -->
+                <article class="project-card">
+
+                    <div class="project-header p3-head">
+                        <span>🤖</span>
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>ChurnGuard AI</h3>
+
+                        <p>
+                            Built an AI-powered customer churn prediction
+                            system using Python, Streamlit, and Scikit-Learn.
+                            Integrated LangGraph, Groq Llama 3.1, and RAG
+                            using ChromaDB and Hugging Face embeddings to
+                            generate intelligent retention strategies,
+                            churn insights and business recommendations
+                            through an interactive dashboard.
+                        </p>
+
+                        <div class="p-tags">
+
+                            <span class="p-tag">Python</span>
+                            <span class="p-tag">Streamlit</span>
+                            <span class="p-tag">Scikit-Learn</span>
+                            <span class="p-tag">LangGraph</span>
+                            <span class="p-tag">RAG</span>
+                            <span class="p-tag">ChromaDB</span>
+
+                        </div>
+
+                        <div class="p-links">
+
+                            <a href="https://github.com/TechySuryansh/GenAI"
+                                target="_blank"
+                                class="p-btn">
+
+                                <i class="fab fa-github"></i>
+
+                            </a>
+
+                            <a href="https://fomzrnb9gaaa7ivk4nmzog.streamlit.app/"
+                                target="_blank"
+                                class="p-btn">
+
+                                <i class="fas fa-external-link-alt"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Let's Connect</p>
+            </div>
+
+
+            <div class="contact-box">
+
+                <h3>Have a project in mind?</h3>
+
+                <p>
+                    I'm currently open to new opportunities and
+                    collaborations. Feel free to reach out directly
+                    via email.
+                </p>
+
+                <a href="mailto:akshatchauhan1346@gmail.com"
+                    class="mail-btn">
+
+                    <i class="fas fa-envelope"></i>
+                    Send Email
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container">
+
+            <div class="socials">
+
+                <a href="https://github.com/acboss1346"
+                    target="_blank"
+                    class="s-icon">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/akshat-chauhan-8b80262a9/"
+                    target="_blank"
+                    class="s-icon">
+
+                    <i class="fab fa-linkedin-in"></i>
+
+                </a>
+
+
+                <a href="https://www.instagram.com/akshat18710/"
+                    target="_blank"
+                    class="s-icon">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+            </div>
+
+
+            <p style="color: var(--text-muted); font-size: 14px;">
+                &copy; 2024 Akshat Chauhan. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Scripts -->
+    <script>
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+
+            const header = document.querySelector('header');
+
+            if (window.scrollY > 50)
+                header.style.padding = '10px 0';
+            else
+                header.style.padding = '20px 0';
+
+        });
+
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+            anchor.addEventListener('click', function (e) {
+
+                e.preventDefault();
+
+                document
+                    .querySelector(this.getAttribute('href'))
+                    .scrollIntoView({
+                        behavior: 'smooth'
+                    });
+
+            });
+
+        });
+
+
+        /* STARFIELD ENGINE */
+
+        const canvas =
+            document.getElementById('star-canvas');
+
+        const ctx =
+            canvas.getContext('2d');
+
+
+        canvas.width =
+            window.innerWidth;
+
+        canvas.height =
+            window.innerHeight;
+
+
+        const stars = [];
+
+        const numStars = 200;
+
+
+        class Star {
+
+            constructor() {
+
+                this.x =
+                    Math.random() * canvas.width;
+
+                this.y =
+                    Math.random() * canvas.height;
+
+                this.z =
+                    Math.random() * canvas.width;
+
+            }
+
+
+            update() {
+
+                this.z -= 0.5;
+
+                if (this.z <= 0) {
+
+                    this.x =
+                        Math.random() * canvas.width;
+
+                    this.y =
+                        Math.random() * canvas.height;
+
+                    this.z =
+                        canvas.width;
+
+                }
+
+            }
+
+
+            draw() {
+
+                const x =
+                    (this.x - canvas.width / 2) *
+                    (canvas.width / this.z);
+
+                const y =
+                    (this.y - canvas.height / 2) *
+                    (canvas.width / this.z);
+
+                const r =
+                    canvas.width / this.z * 1.5;
+
+
+                ctx.beginPath();
+
+                ctx.fillStyle =
+                    "rgba(0, 255, 136, " +
+                    (1 - this.z / canvas.width) +
+                    ")";
+
+                ctx.arc(
+                    x + canvas.width / 2,
+                    y + canvas.height / 2,
+                    r,
+                    0,
+                    Math.PI * 2
+                );
+
+                ctx.fill();
+
+            }
+
+        }
+
+
+        for (
+            let i = 0;
+            i < numStars;
+            i++
+        ) {
+
+            stars.push(new Star());
+
+        }
+
+
+        function animate() {
+
+            ctx.clearRect(
+                0,
+                0,
+                canvas.width,
+                canvas.height
+            );
+
+
+            stars.forEach(star => {
+
+                star.update();
+                star.draw();
+
+            });
+
+
+            requestAnimationFrame(animate);
+
+        }
+
+
+        animate();
+
+
+        window.addEventListener('resize', () => {
+
+            canvas.width =
+                window.innerWidth;
+
+            canvas.height =
+                window.innerHeight;
+
+        });
+
+    </script>
+
+</body>
+
+</html>
